@@ -95,7 +95,7 @@ module.exports = {
     new CopyPlugin([
       { from: 'public/css/styles.min.css', to: '../drupal/2022-ukraine_brief_2.min.css' },
       { from: 'public/js/script.min.js', to: '../drupal/2022-ukraine_brief_2.min.js' },
-      { from: 'public/data/data2021.json', to: '../drupal/2022-ukraine_brief_2.json' },
+      { from: 'public/data/data.json', to: '../drupal/2022-ukraine_brief_2.json' },
       { from: 'media/img/', to: 'img' },
       { from: 'media/data/', to: 'data' },
       { from: 'favicon.png', to: '' }
