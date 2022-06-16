@@ -1,5 +1,5 @@
 {
-  "name": "2022-ukraine_brief_2",
+  "name": "2022-edar_report",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -36,6 +36,8 @@
     "@beyonk/google-fonts-webpack-plugin": "^1.7.0",
     "chroma-js": "^2.1.2",
     "d3": "^7.4.4",
-    "highcharts": "^10.1.0"
+    "highcharts": "^10.1.0",
+    "intersection-observer": "^0.12.2",
+    "react-is-visible": "^1.2.0"
   }
 }
