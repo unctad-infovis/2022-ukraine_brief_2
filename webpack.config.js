@@ -82,7 +82,7 @@ module.exports = {
         variants: ['400','700']
       },{
         family: 'Roboto',
-        variants: ['400','700']
+        variants: ['300', '400','700']
       }]
     }),
     new HtmlWebPackPlugin({
