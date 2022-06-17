@@ -117,7 +117,7 @@ const App = () => {
             <li>Climate disasters cost the global economy around $520 billion per year20, with a disproportionate share of the adverse effect being borne by developing countries who are forced to redirect domestic public money towards adaptation and loss and damage efforts, as opposed to development spending.</li>
           </ul>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.left} src={figure1} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.left + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure1} />}
           </IsVisible>
           <h5>Countries are also weaker to cope with this new crisis</h5>
           <ul>
@@ -127,17 +127,17 @@ const App = () => {
             <li>ILO has estimated that the social protection financing gap is $1.2 trillion per year in developing countries.</li>
           </ul>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.full + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false && ' ' + style.notransition)} src={figure2} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.full + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '') + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false && ' ' + style.notransition)} src={figure2} />}
           </IsVisible>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.full + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false && ' ' + style.notransition)} src={figure3} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.full + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '') + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false && ' ' + style.notransition)} src={figure3} />}
           </IsVisible>
           <h3>2. Impacts of the cost-of-living crisis on people</h3>
           <p>The crisis is rapidly constraining household budgets. This has important implications in terms of poverty levels, real incomes, educational attainment, as well as food and energy access. These impacts are also highly regressive, as they affect poorest households, as well as women and girls, the most. Its effects on food insecurity, malnutrition and hunger are particularly alarming in the current context.</p>
           <h4>Impact of the war on poverty, incomes and energy access</h4>
           <p>According to the World Bank, taking into account only the price increases for corn and wheat, the average household has lost 1.5 per cent in real income since the start of the war a figure that varies greatly by country. Figure 1 shows that averages can hide more than they reveal when the impacts are disaggregated.</p>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.right} src={figure4} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.right + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure4} />}
           </IsVisible>
           <h5>High food prices will affect the most vulnerable in society the most</h5>
           <ul>
@@ -149,10 +149,10 @@ const App = () => {
             <li>The rising energy prices will increase energy poverty, leading people to return to using biomass, which can disproportionately affect women. When energy resources are too expensive or scarce, women spend more time fulfilling the energy needs of households. Access to energy also plays a key role in women’s small-scale income-earning activities in the informal sector.</li>
           </ul>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.left} src={figure5} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.left + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure5} />}
           </IsVisible>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.left} src={figure6} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.left + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure6} />}
           </IsVisible>
           <h4>Impact of the war on food security</h4>
           <ul>
@@ -164,7 +164,7 @@ const App = () => {
           </ul>
           <p>The livelihoods of more than 2 billion small producers, farm labourers, rural workers and their families are at risk, not least because they already cannot afford a healthy diet</p>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.right} src={figure7} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.right + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure7} />}
           </IsVisible>
           <ul>
             <li>Women comprise 43 per cent of the agricultural labour force in developing countries and account for two thirds of the world’s 600 million poor livestock keepers.</li>
@@ -172,7 +172,7 @@ const App = () => {
           </ul>
           <p>People are coping with the crisis on a day-to-day basis through actions with worrying long-term consequences for nutrition and early childhood development therefore converting what can be a short-term crisis into a long-term protracted crisis with severe consequences on long term poverty, income distribution and development outcomes for decades to come if immediate actions are not taken. Some of the most worrying signs of these are:</p>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.left} src={figure8} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.left + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure8} />}
           </IsVisible>
           <ul>
             <li>People are already reducing food purchases, and may be reducing the number of nutritious items, skipping meals or eating smaller portions. Women and girls who often eat less and eat last are particularly affected.</li>
@@ -186,10 +186,10 @@ const App = () => {
           </ul>
           <h3>3. A fertilizer crisis and trade restrictions threaten to exacerbate the crisis</h3>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.right} src={figure9} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.right + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure9} />}
           </IsVisible>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.right} src={figure10} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.right + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure10} />}
           </IsVisible>
           <h4>A fertilizer crisis and a rise in trade restrictions threaten to exacerbate the crisis into 2023</h4>
           <p>Two factors – declining fertilizer affordability and rising export restrictions – may worsen the medium-term outlook. Both act by disrupting markets and accelerating the ‘distributional’ component of this crisis: fertilizers may not arrive on time and in the right quantities and prices to the fields where they are needed, and export restrictions may complicate the delivery of essential food supplies to the most vulnerable. In combination, they threaten to transform the current crisis of access into a future crisis of availability.</p>
@@ -204,7 +204,7 @@ const App = () => {
             <li>Among regions currently lacking adequate fertilizer sources, the situation in West Africa is the most time sensitive, as the planting season begins in May and June. Planting will begin in other regions in the coming months, and the increase in fertilizer prices can have different effects depending on the region, compromising the livelihoods of millions of people (figure 7). New fertilizer plants tend to take 2–5 years to become operational, meaning that fertilizer suppliers are unable to react quickly to higher levels of global demand. The issue is therefore distributional in nature because market forces will take too long to correct it. Due to this critical fertilizer issue, without appropriate multilateral action, food prices may continue to increase, including for a wider range of staples.</li>
           </ul>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.full} src={figure11} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.full + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure11} />}
           </IsVisible>
           <h4>Export restrictions on food and fertilizers have surged since the start of the war</h4>
           <ul>
@@ -213,28 +213,28 @@ const App = () => {
             <li>Since 24 February 2022, more than 200 trade-related policy measures have been recorded, both trade-facilitating measures and trade-restricting measures.35 About 80 per cent of these measures affect agricultural products or fertilizers. Of these, 109 measures are export restricting measures such as bans on the export of fertilizers and certain food products, taken by 63 countries.</li>
           </ul>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.full} src={figure12} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.full + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure12} />}
           </IsVisible>
           <p>The situation is critical and strong cooperation is required to avoid more restrictions. The crisis in food and fertilizers will worsen quickly if the international community does not act now. Without immediate preventative steps, current disruptions in food systems will heighten the risk of social unrest in many countries, such as the unrest that occurred in several countries following the food price crisis in 2007/08.</p>
           <h3>4. This is a global crisis, not confined to any one region</h3>
           <p>As a follow-up to the initial UN Global Crisis Response Group analysis, the United Nations regional economic commissions have looked at the capacity of countries to cope, confirming that between 1.6 billion and 1.7 billion people live in countries severely exposed to at least one of the three transmission channels of the crisis, namely, rising food prices, rising energy prices and tightening finances. Of greatest concern, 1.2 billion people live in countries exposed to a “perfect storm” of all three dimensions at once. However, not all regions and subregions are exposed in the same way.</p>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.full} src={figure13} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.full + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure13} />}
           </IsVisible>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.full} src={figure14} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.full + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure14} />}
           </IsVisible>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.full} src={figure15} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.full + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure15} />}
           </IsVisible>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.full} src={figure16} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.full + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure16} />}
           </IsVisible>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.full} src={figure17} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.full + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure17} />}
           </IsVisible>
           <IsVisible once>
-            {(isVisible) => <img className={style.content_image + ' ' + style.full} src={figure18} />}
+            {(isVisible) => <img className={style.content_image + ' ' + style.full + ((isVisible && y > 200) ? ' ' + style.visible : ' ' + style.not_seen) + (anchorClicked !== false ? ' ' + style.notransition : '')} src={figure18} />}
           </IsVisible>
           <h3>5. Policy recommendations</h3>
           <p>Given the systemic nature of this crisis, strong political will is needed. Piece-meal approaches will not work. The vicious cycle dynamics this brief highlights show that to solve just the food dimension of this crisis, important efforts will also be needed in energy and finance. Just as a family may skip a meal to pay for a minimum of electricity, a country may be forced to reduce food imports if their currency devalues, or debt service payments increase. <span className={style.highlight}>The FAO’s recent proposal of a Food Import Financing Facility is a good example of the kind of comprehensive multi-dimensional, multi-stakeholder, quickly deployable policies needed at this time.</span></p>
@@ -252,12 +252,12 @@ const App = () => {
               </ul>
             </li>
             <li>To increase the capacity of people and countries to cope, social protection systems and safety nets must be widened and strengthened for urgent use and fiscal space must beincreased. Both social protection measures and fiscal space are in fact linked – countries need support from the financial institutions to increase their fiscal space to in turn increase social protection spending, including cash transfers to the most vulnerable. The international community needs to support countries protect their poor and vulnerable. It is important governance issues are addressed to ensure that these resources are well spent. Emergency social protection policies should be targeted, time-bound, consistent with sustainable development goals and not allocated universally.
-              <ul>
-                <li>Special attention must be given to the nutritional needs of the vulnerable, as well as women and children.</li>
-                <li>Vulnerable energy consumers must be shielded from soaring prices, including through relief measures funded by windfall taxes on energy companies.</li>
-                <li>As part of the effort to increase fiscal space countries must commit to improving the governance of the seeds and fertilizer distribution mechanisms. Historical inefficiencies and weak governance have been costly and undermined efficient and effective markets.</li>
-                <li>Humanitarian assistance is also needed and should be provided early on, in collaboration with development actors, with cash as well as food and other essentials, in ways that strengthen local capabilities and minimise dependence on external groups. In this context, it is critical that countries reconsider proposed cuts to Official Development Assistance commitments, which ought instead to be respected and increased.</li>
-              </ul>
+            <ul>
+              <li>Special attention must be given to the nutritional needs of the vulnerable, as well as women and children.</li>
+              <li>Vulnerable energy consumers must be shielded from soaring prices, including through relief measures funded by windfall taxes on energy companies.</li>
+              <li>As part of the effort to increase fiscal space countries must commit to improving the governance of the seeds and fertilizer distribution mechanisms. Historical inefficiencies and weak governance have been costly and undermined efficient and effective markets.</li>
+              <li>Humanitarian assistance is also needed and should be provided early on, in collaboration with development actors, with cash as well as food and other essentials, in ways that strengthen local capabilities and minimise dependence on external groups. In this context, it is critical that countries reconsider proposed cuts to Official Development Assistance commitments, which ought instead to be respected and increased.</li>
+            </ul>
             </li>
           </ul>
           <p><span className={style.highlight}></span>There is no answer to the cost-of-living crisis without an answer to the finance crisis in developing countries.</p>
