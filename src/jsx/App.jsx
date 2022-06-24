@@ -6,8 +6,8 @@ import style from './../styles/styles.less';
 import * as d3 from 'd3';
 
 // https://www.npmjs.com/package/react-is-visible
-import 'intersection-observer'
-import IsVisible from 'react-is-visible'
+import 'intersection-observer';
+import IsVisible from 'react-is-visible';
 
 // https://www.highcharts.com/
 // import Highcharts from 'highcharts';
