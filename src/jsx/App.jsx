@@ -2,9 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom'
 import style from './../styles/styles.less';
 
-// https://d3js.org/
-import * as d3 from 'd3';
-
 // https://www.npmjs.com/package/react-is-visible
 import 'intersection-observer';
 import IsVisible from 'react-is-visible';
@@ -48,18 +45,6 @@ const App = () => {
   const [anchorClicked, setAnchorClicked] = useState(false);
   const [data, setData] = useState(false);
   
-  useEffect(() => {
-    const data_file = (window.location.href.includes('unctad.org')) ? '/sites/default/files/data-file/2022-edar_report.json' : './data/data2020.json';
-    try {
-      d3.json(data_file).then((json_data) => {
-        setData(json_data);
-      });
-    }
-    catch (error) {
-      console.error(error);
-    }
-  }, []);
-
   useEffect(() => {
     window.addEventListener('scroll', (e) => {
       if (window.scrollY > 200) {
